@@ -48,13 +48,13 @@ export default async function PokemonPage({ params }: Props) {
             #{pokemon.id} {pokemon.name}
           </h1>
           <div className='flex flex-col justify-center items-center'>
-            {/* <Image
+            <Image
               src={pokemon.sprites.other?.dream_world.front_default ?? ''}
               width={150}
               height={150}
               alt={`Imagen del pokemon ${pokemon.name}`}
               className='mb-5'
-            /> */}
+            />
 
             <div className='flex flex-wrap'>
               {pokemon.moves.map((move) => (
@@ -87,7 +87,7 @@ export default async function PokemonPage({ params }: Props) {
           <div className='flex flex-col justify-center rounded-2xl bg-white bg-clip-border px-3 py-4  drop-shadow-lg'>
             <p className='text-sm text-gray-600'>Regular Sprites</p>
             <div className='flex justify-center'>
-              {/* <Image
+              <Image
                 src={pokemon.sprites.front_default}
                 width={100}
                 height={100}
@@ -99,14 +99,14 @@ export default async function PokemonPage({ params }: Props) {
                 width={100}
                 height={100}
                 alt={`sprite ${pokemon.name}`}
-              /> */}
+              />
             </div>
           </div>
 
           <div className='flex flex-col justify-center rounded-2xl bg-white bg-clip-border px-3 py-4  drop-shadow-lg'>
             <p className='text-sm text-gray-600'>Shiny Sprites</p>
             <div className='flex justify-center'>
-              {/* <Image
+              <Image
                 src={pokemon.sprites.front_shiny}
                 width={100}
                 height={100}
@@ -118,7 +118,7 @@ export default async function PokemonPage({ params }: Props) {
                 width={100}
                 height={100}
                 alt={`sprite ${pokemon.name}`}
-              /> */}
+              />
             </div>
           </div>
         </div>
