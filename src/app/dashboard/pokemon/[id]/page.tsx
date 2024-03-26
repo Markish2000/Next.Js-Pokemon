@@ -19,8 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   } catch (error) {
     return {
       title: 'Página del pokémon',
-      description:
-        'Culpa cupidatat ipsum magna reprehenderit ex tempor sint ad minim reprehenderit consequat sit.',
+      description: 'La página del pokémon no se pudo cargar..',
     };
   }
 }
