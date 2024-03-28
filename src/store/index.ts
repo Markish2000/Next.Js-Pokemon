@@ -4,7 +4,7 @@ import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
 import counterReducer from './counter/counterSlice';
 
 export const store = configureStore({
-  reducer: { counterReducer },
+  reducer: { counter: counterReducer },
 });
 
 export type RootState = ReturnType<typeof store.getState>;
