@@ -7,8 +7,8 @@ import { IoHeart, IoHeartOutline } from 'react-icons/io5';
 import { useDispatch } from 'react-redux';
 
 import { SimplePokemon } from '../interfaces/simple-pokemon';
-import { useAppSelector } from '@/store';
 import { toggleFavorite } from '@/store/pokemons/pokemons';
+import { useAppSelector } from '@/store';
 
 interface Props {
   pokemon: SimplePokemon;
@@ -16,7 +16,7 @@ interface Props {
 
 export const PokemonCard = ({ pokemon }: Props) => {
   const { id, name } = pokemon;
-  const isFavorite = useAppSelector((state) => !!state.pokemons[id]);
+  const isFavorite = useAppSelector((state) => !!state.pokemons.favorites[id]);
   const dispatch = useDispatch();
 
   const onToggle = () => {
